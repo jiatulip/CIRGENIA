@@ -1,0 +1,8 @@
+{
+  "folders": [{"path": ".", "name": "CIRGENIA website & web application"}],
+  "settings": {"files.exclude": {"**/node_modules": true, "**/dist": true, "**/.wrangler": true}, "editor.formatOnSave": false},
+  "tasks": {"version": "2.0.0", "tasks": [
+    {"label": "CIRGENIA: Start on my Mac", "type": "process", "command": "node", "args": ["scripts/macbook.mjs"], "options": {"cwd": "${workspaceFolder}"}, "problemMatcher": []},
+    {"label": "CIRGENIA: Check TypeScript", "type": "process", "command": "npx", "args": ["--yes", "pnpm@11.25.0", "exec", "tsc", "--noEmit"], "options": {"cwd": "${workspaceFolder}"}, "problemMatcher": []}
+  ]}
+}

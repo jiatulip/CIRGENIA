@@ -1,0 +1,1 @@
+ALTER TABLE `inquiries` ADD `privacy_version` text;
